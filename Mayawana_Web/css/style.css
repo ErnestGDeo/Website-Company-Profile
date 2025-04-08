@@ -1,0 +1,1145 @@
+
+
+/* general */
+body {
+    /* edit font  */
+    font-family: 'Montserrat ', sans-serif;
+    font-size: 7px;
+    color: #000;
+}
+a:active {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+h1,h2, h3, h4, h5, h6 {
+    /* edit font  */
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+}
+h1 {
+    text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.main-content {
+    flex: 1;
+}
+.margin_top { margin-top: 40px; }   
+
+/* header */
+header {
+    border: 0px solid #006600;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    height: 100px;
+}
+header .medsos {
+    background-color: #006600;
+    top: 0;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    text-align : center;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.medsos .social-icon {
+    color: white;               /* Warna ikon putih */
+    font-size: 2em;             /* Ukuran ikon lebih besar */
+    text-decoration: none;      /* Menghilangkan garis bawah */
+    transition: color 0.3s;     /* Efek transisi saat hover */
+    padding: 5px;
+}
+.medsos .social-icon :hover {
+    color: #41b3a2c9;
+}
+
+header #logo {
+    padding-top: 0px;
+    float: left;
+    display: flex;
+    align-items: center; /* Rata tengah vertikal */
+}
+
+header #logo img {
+    width: 110%;
+    height: 52px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 10px; /* Jarak antara logo dan teks */
+}
+
+header #logo p {
+    margin: 0;
+    font-size: 14px;
+    color: #31511E;
+    white-space: nowrap; /* Jangan potong teks */
+    display: inline-block; /* Pastikan tetap sejajar dengan logo */
+    /* edit font  */
+    font-family: 'Montserrat', sans-serif; /* Font Montserrat */
+}
+
+header ul {
+    float: left;
+    min-height: 60px;
+    margin-top: -65px;
+}
+header ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    height: 45px;
+}
+/* edit font  */
+header ul li a {
+    font: normal normal normal 18px/20px 'Montserrat', sans-serif;
+    text-align: center;
+    float: left;
+    color: #31511E;
+    height: 43px;
+}
+header ul li:hover a, header ul li:active a, header ul li:focus a, header ul li a.current{
+    color: #31511E;
+    border-bottom: 2px solid #31511E;
+    text-decoration: none;
+}
+header .nav li a:hover, header .nav li a:focus {
+    background-color: #fff;
+    color: #31511E;
+}
+
+.navbar .btn-login {
+    background-color: #007bff; /* Warna tombol */
+    color: #ffffff;           /* Warna teks */
+    border-radius: 5px;       /* Bentuk sudut */
+}
+/* Styling untuk memastikan elemen tersusun ke kanan */
+#nav-bar {
+    display: flex;               /* Menggunakan Flexbox */
+    justify-content: flex-end;   /* Mengatur item agar ke kanan */
+    align-items: end;         /* Menyelaraskan item secara vertikal */
+    margin: -60px 10px 0px 1500px;
+}
+#nav-bar ul {
+    display: flex;               /* Menyusun elemen dalam satu baris */
+    list-style: none;            /* Menghilangkan bullet pada list */
+    margin: 0;
+    padding: 14px;
+
+}
+#nav-bar li {
+    margin-left: 10px;           /* Menambahkan jarak antar item */
+}
+
+#nav-bar li a:hover {
+    text-decoration: underline;  /* Efek hover pada menu */
+}
+
+.navbar .btn-login:hover {
+    background-color: #0056b3; /* Warna tombol saat hover */
+}
+
+/* Beranda */
+/* Styling untuk hero-section */
+.hero-section {
+    /* background-image: url("../images/hutan6.jpeg"); Ganti dengan path gambar Anda */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 400px 0; /* Padding besar untuk layar besar */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.hero-section h1 {
+    font-size: 4em; /* Ukuran font besar pada layar besar */
+    max-width: 80%; /* Maksimal 80% lebar layar */
+    /* background-color: rgba(62, 122, 12, 0.73); Warna background dengan transparansi */
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 0px 40px;
+}
+/* edit font  */
+.hero-section p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em; /* Ukuran font sedang */
+    max-width: 80%; /* Maksimal 80% lebar layar */
+    /* background-color: rgba(62, 122, 12, 0.73); Warna background dengan transparansi */
+    padding: 0px 20px; /* Padding lebih kecil di sisi kiri dan kanan */
+    border-radius: 6px;
+    margin: -2px 0px;
+}
+
+/* Responsif untuk layar tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 250px 0; /* Mengurangi padding pada layar tablet */
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5em; /* Mengurangi ukuran font pada layar tablet */
+        margin: 0 20px; /* Mengurangi margin agar lebih pas pada layar kecil */
+    }
+
+    .hero-section p {
+        font-size: 1.2em; /* Menyesuaikan ukuran font untuk p */
+        padding: 10px 20px; /* Padding lebih kecil untuk p */
+    }
+}
+
+/* Responsif untuk layar smartphone (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 150px 0; /* Mengurangi padding lebih lanjut pada layar kecil */
+    }
+
+    .hero-section h1 {
+        font-size: 2em; /* Ukuran font h1 lebih kecil pada layar sangat kecil */
+        margin: 0 10px; /* Margin lebih kecil pada layar sangat kecil */
+    }
+
+    .hero-section p {
+        font-size: 1em; /* Ukuran font p lebih kecil pada layar sangat kecil */
+        padding: 10px 15px; /* Padding lebih kecil pada layar kecil */
+    }
+}
+
+    /* Responsif: Ukuran untuk layar lebih kecil */
+@media (max-width: 768px) {
+   .hero-section {
+      padding: 80px 15px; /* Mengurangi padding untuk layar kecil */
+   }
+   .hero-section h1 {
+      font-size: 2.5em; /* Menyesuaikan ukuran font pada perangkat kecil */
+   }
+   .hero-section p {
+      font-size: 1.2em; /* Menyesuaikan ukuran font pada perangkat kecil */
+   }
+}
+
+@media (max-width: 480px) {
+   .hero-section {
+      padding: 156px 35px; /* Mengurangi padding lebih lanjut pada perangkat kecil */
+   }
+   .hero-section h1 {
+      font-size: 2em; /* Ukuran font judul yang lebih kecil pada layar sangat kecil */
+   }
+   .hero-section p {
+      font-size: 1em; /* Ukuran font paragraf yang lebih kecil pada layar sangat kecil */
+   }
+}
+/* slideshow */
+#slideshow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding-top: 10px;
+}
+
+#slideshow #main-slider .flex-caption {
+    top: 15%;
+    background-color: rgb(50 73 38 / 74%);
+    color: #fff;
+    margin: 30px;
+    padding: 8px 13px 5px 13px;
+    position: absolute;
+    border-radius: 9px;
+}
+
+#slideshow #main-slider .flex-button a:hover {
+    text-decoration: none;
+}
+#slideshow #main-slider .slides img {
+    width: 100%;         /* Mengatur lebar gambar agar menyesuaikan kontainer */
+    height: 600px;       /* Tetapkan tinggi tetap agar seragam (ubah sesuai keinginan) */
+    object-fit: cover;   /* Memastikan gambar tetap proporsional tanpa melar */
+}
+#slideshow #main-slider .flex-button .btn-theme {
+    text-transform: lowercase;
+    font-size: 20px;
+}
+#slideshow #main-slider .flex-control-nav {
+    bottom: 5%;
+}
+#slideshow #main-slider .flex-caption h3 {
+    color: #ffffff;
+    margin-bottom: 8px; 
+    /* edit font  */
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#slideshow #main-slider .flex-caption p {
+    margin: 0 0 15px;
+    text-align: justify;
+    color: #ffffff;
+    line-height: 22px;
+    /* edit font  */
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Menambahkan posisi dan gaya untuk tombol navigasi */
+#slideshow #main-slider .flex-prev,
+#slideshow #main-slider .flex-next {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang tombol */
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+#slideshow #main-slider .flex-prev {
+    left: 10px;
+}
+
+#slideshow #main-slider .flex-next {
+    right: 10px;
+}
+
+#slideshow #main-slider .flex-prev:hover,
+#slideshow #main-slider .flex-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Ubah latar belakang saat hover */
+}
+.flex-control-paging li a {
+    background-color: #66775d;
+}
+.flex-control-paging li a.flex-active,.flex-control-paging li a:hover {
+    background-color: #fff;
+
+    
+}
+/* slideshow text */
+.limited-text {
+    width: 25ch; /* 25 characters per line */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.limited-title {
+    max-width: 20ch; /* Tentukan lebar maksimal */
+    word-break: break-word; /* Memastikan kata turun ke bawah jika lebih panjang */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Maksimal 2 baris */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+ 
+
+
+
+
+/* panah */
+.flex-prev, .flex-next {
+    position: absolute; /* Posisi absolut agar bisa ditumpuk di atas gambar */
+    top: 50%; /* Menempatkan di tengah vertikal */
+    transform: translateY(-50%); /* Mengubah posisi agar tepat di tengah */
+    color: white; /* Warna ikon panah */
+    font-size: 30px; /* Ukuran ikon */
+    cursor: pointer; /* Menampilkan kursor tangan saat hover */
+    z-index: 10; /* Agar berada di atas konten lain */
+}
+
+.flex-prev {
+    left: 10px; /* Jarak dari sisi kiri */
+}
+
+.flex-next {
+    right: 10px; /* Jarak dari sisi kanan */
+}
+
+.flex-prev:hover, .flex-next:hover {
+    color: #f0f0f0; /* Ubah warna saat hover */
+}
+
+/*solid line*/
+.solidline {
+    border-top: 1px solid #c9cbca;
+    margin: 30px 0 30px 0;
+    width: 100%;
+}
+/* scroll */
+.scrollup {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 65px;
+    right: 18px;
+    background: #222;
+    background: url("../images/arrow.png")no-repeat;
+}
+/*slideshow*/
+#slideshow .container .row {
+    margin-bottom: 3.5%;
+}
+.btn-lg {
+    padding: 10px 25px;
+    border-radius: 6px;
+    text-transform: lowercase;
+    background: #c9cbca;
+    font-size: 12px;
+}
+
+/* about */
+#about {
+    position: static;
+    /* mengganti gambar yang ada di belakang about */
+    /* bayangBayang */
+    background-image: url('../images/logo\ pudar.png'); /* Path gambar */
+    background-size: 45%; /* Mengatur ukuran gambar agar tidak memenuhi seluruh elemen */
+    background-position: 0px 200px; /* Menyusun gambar di tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    flex: 1;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(214, 214, 214, 0.788); /* Memberikan latar belakang putih dengan opacity 0.7 */
+    z-index: -1; /* Menempatkan layer transparan di bawah konten */
+}
+
+#about .row {
+    margin-top: 30px;
+}
+
+#about h2 {
+    /* edit font  */
+    font: normal normal normal 24px/24px 'Montserrat', 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+
+#about img.about-image {
+    max-width: 100%;
+    width: 225px; /* Lebar maksimum untuk gambar */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    aspect-ratio: 6 / 4; /* Rasio gambar 3:4 */
+    object-fit: cover; /* Memotong gambar untuk menjaga proporsi */
+    object-position: center; /* Fokus pada bagian tengah gambar */
+    border-radius: 8px; /* Membulatkan sudut gambar */
+    margin: 0 0 10px 0; /* Jarak di bawah gambar */
+}
+
+#about p {
+    /* edit font  */
+    font: normal normal normal 14px/30px 'Montserrat', 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+#about p a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* services */
+#services h2 {
+    /* edit font  */
+    font: normal normal normal 24px/26px 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#services p {
+    font-size: 14px;
+    line-height: 20px;
+    /* edit font  */
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-align: left;
+}
+#services .row {
+    padding-bottom: 90px;
+}
+/* program image */
+.program-image {
+    width: 100%; /* Menyesuaikan dengan kontainer */
+    max-width: 225px; /* Batas lebar 3x4 (Opsional, atur sesuai desain) */
+    height: 130px; /* Tinggi mengikuti proporsi */
+    aspect-ratio: 4 / 3; /* Menjaga rasio gambar 3x4 */
+    object-fit: cover; /* Memotong sisi gambar agar sesuai dengan rasio 3x4 */
+    object-position: center; /* Fokus pada bagian tengah gambar */
+    border-radius: 8px; /* Membuat sudut gambar lebih rapi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Opsional, efek bayangan */
+    display: block;
+    margin: 0 auto; /* Pusatkan gambar di dalam kontainer */
+}
+
+
+
+ /* Contoh bagian konten */
+ .content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+ }
+/*blog*/
+#blog {
+    background-color: rgba(214, 214, 214, 0.788); /* Warna background abu-abu terang */
+    padding: 20px 0; /* Tambahkan padding untuk memberikan ruang di sekitar konten */
+    /* bayangBayang */
+    /* mengganti gambar yang ada di belakang Media */
+    background-image: url('../images/logo\ pudar.png');
+    background-size: 45%, 100% 100%; /* Atur ukuran gambar dan layer kedua */
+    background-position: 0px 200px, 30px 0; /* Atur posisi gambar */
+    background-repeat:no-repeat;
+}
+#blog p {
+    color: #000;
+    text-align: justify;
+    padding: 0;
+}
+/* edit font  */
+#blog a {
+    font-family:  'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#blog a span {
+    font-size: 10px;
+}
+#blog a span {
+    font-size: 10px;
+}
+#blog a span {
+    font-size: 10px;
+}
+#blog a span {
+    font-size: 10px;
+}
+#blog .container .row {
+    margin-bottom: 0px;
+}
+#blog .article-image {
+    width: 100%;          /* Atur lebar gambar agar menyesuaikan dengan kontainer */
+    aspect-ratio: 3 / 2;  /* Tetapkan rasio 6:4 (3:2) */
+    object-fit: cover;    /* Crop gambar sesuai rasio */
+    border-radius: 8px;   /* Opsional: tambahkan border-radius jika ingin sudut gambar membulat */
+    overflow: hidden;     /* Memastikan elemen lain tidak melewati batas kontainer */
+    display: block;       /* Mengatur gambar sebagai elemen blok */
+}
+#bg-light-media{
+ /* background-color: rgba(44, 180, 26, 0.575);   untuk ganti warna bg */
+ background: rgba(214, 214, 214, 0.788);
+ border-radius: 6px;
+ padding-bottom: 25px;
+}
+
+ /* program */
+ .read-more-content {
+    display: none; /* Awalnya sembunyikan konten tambahan */
+}
+.read-more-btn {
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*contact*/
+/* Responsive Fullscreen Contact Section */
+#contact {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f0f0f0;
+    padding-top: 40px; /* adjust sesuai tinggi navbar */
+}
+
+/* Container bagian abu-abu */
+#contact #contact_gray_wap {
+    background-color: #557C56;
+    border-radius: 6px;
+    padding: 20px 3px;
+    margin: 20px;
+    width: 90%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+/* Judul */
+#contact h1 {
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Paragraf */
+#contact p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+/* Formulir */
+#contact-form {
+    width: 100%;
+}
+
+#contact-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+#contact-form label span {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#contact-form label textarea,
+#contact-form label input[type="text"] {
+    font: 14px/28px 'Montserrat', sans-serif;
+    color: #000;
+    background: #fff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact-form label textarea {
+    height: 100px;
+}
+
+#contact-form label input[type="text"] {
+    height: 40px;
+}
+
+/* Tombol submit */
+#contact-form label button[type="submit"] {
+    font: 14px/30px 'Montserrat', sans-serif;
+    color: #000;
+    background: #c5c5c5;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    margin: 10px auto 0;
+    display: block;
+}
+
+/* List kontak atau social */
+#contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px;
+}
+
+#contact ul li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+#contact ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #contact #contact_gray_wap {
+        padding: 20px;
+    }
+
+    #contact h1 {
+        font-size: 24px;
+    }
+
+    #contact-form label span {
+        font-size: 12px;
+    }
+
+    #contact-form label input[type="text"],
+    #contact-form label textarea {
+        width: 100%;
+    }
+
+    #contact-form label button[type="submit"] {
+        width: 100%;
+    }
+}
+
+
+.job-list {
+    max-height: 460px; /* Sesuaikan tinggi sesuai kebutuhan */
+    overflow-y: scroll;
+    padding: 10px; /* Tambahkan ruang untuk menghindari scroll bar menutupi konten */
+}
+.job-list li {
+    padding-bottom: 15px; /* Jarak antara item dan garis */
+    margin-bottom: 15px;   /* Jarak antara garis dan item berikutnya */
+    border-bottom: 1px solid #ddd; /* Garis pembatas */
+}
+
+.job-list li:last-child {
+    border-bottom: none; /* Menghilangkan garis pembatas pada item terakhir */
+}
+
+
+
+/* FOOTER */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Konten di kiri, ikon di kanan */
+    max-width: 100%; /* Lebar maksimum footer */
+    margin: 0 auto;
+    border-top: 2px solid #45af68de; /* Menambahkan border atas */
+}
+
+.footer-content {
+    font-size: 14px;
+    text-align: left; /* Konten rata kiri */
+    flex: 1; /* Mengisi ruang yang tersisa di kiri */
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px; /* Spasi antar ikon sosial */
+    justify-content: flex-end; /* Ikon rata kanan */
+}
+
+.footer-icons .social-icon {
+    color: white;               /* Warna ikon */
+    font-size: 2em;             /* Ukuran ikon (sama dengan header) */
+    text-decoration: none;      /* Menghilangkan garis bawah */
+    transition: color 0.3s;     /* Efek transisi saat hover */
+    padding: 5px;               /* Padding sama dengan header */
+}
+
+.footer-icons .social-icon:hover {
+    color: #41b3a2c9; /* Warna saat ikon di-hover */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    #footer {
+        flex-direction: column; /* Susun ke bawah pada layar kecil */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content, .footer-icons {
+        flex: none;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+/* Tambahkan scroll untuk kontainer artikel */
+
+
+.content-container {
+    max-height: 500px;
+    overflow-y: scroll;
+    padding-right: 10px; /* Tambahkan padding agar scrollbar tidak menutupi konten */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px 15px;
+    font-size: 15px; /* atau ukuran sesuai keinginan */
+}
+
+.pagination button {
+    padding: 7px 15px;
+    margin: 0px 50px;
+    width: 50px;
+    background-color: #065bb6c2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+
+/*responsive setting*/
+@media (min-width: 1025px) {
+    header ul li {
+        margin: 10px 10px 0 10px;
+    }
+    header ul li a {
+        margin: 0;
+        padding: 0 5% 0 5%;
+    }
+    #services p {
+        line-height: 30px;
+        padding: 17px 0;
+    }
+    #blog h2 {
+        /* edit font  */
+        font: normal normal normal  24px/30px 'Montserrat', sans-serif;
+        margin: 0px 0 25px 0;
+    }
+    #blog p {
+        /* edit font  */
+        font: normal normal normal 14px/30px 'Montserrat', sans-serif;
+    }
+}
+@media (min-width: 992px) and (max-width: 1600px) {
+    header ul li {
+        margin: 10px 5px 0 0px;
+    }
+    header ul li a {
+        margin: 0;
+        padding: 0px 2% 0 2%;
+    }
+    header #logo img {
+        width: 100%;
+        height: 60px;
+    }
+    header #logo p {
+        font-size: 17px;
+        margin-top: 16px;
+    }
+    #nav-bar {
+        display: flex;               /* Menggunakan Flexbox */
+        justify-content: flex-end;   /* Mengatur item agar ke kanan */
+        align-items: end;         /* Menyelaraskan item secara vertikal */
+        margin: -60px 10px 0px 1035px;
+    }
+    #nav-bar ul {
+        display: flex;               /* Menyusun elemen dalam satu baris */
+        list-style: none;            /* Menghilangkan bullet pada list */
+        margin: 0;
+        padding: 6px;
+    }
+    #slideshow #main-slider .flex-caption p {
+        font-size: 11px !important;
+        line-height: 20px;
+    }
+    #slideshow #main-slider .flex-button a {
+        bottom: 14%;
+    }
+    #services p {
+        line-height: 28px;
+        padding: 8px 0;
+    }
+    #blog h2 {
+        /* edit font  */
+        font: normal normal normal  20px/30px 'Montserrat', sans-serif;
+        margin: 5px 0 10px 0;
+    }
+    #blog p {
+        /* edit font  */
+        font: normal normal normal 14px/26px 'Montserrat', sans-serif;
+    }
+    #slideshow #main-slider .slides img {
+        height: 400px;  /* Kurangi tinggi gambar untuk layar menengah */
+    }
+
+    #slideshow #main-slider .flex-caption {
+        top: 10%;
+        padding: 6px 10px;
+    }
+
+    #slideshow #main-slider .flex-caption h3 {
+        font-size: 18px;
+    }
+
+    #slideshow #main-slider .flex-caption p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    header ul li {
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+    header ul li a {
+        margin: 0;
+        padding: 0 12px 0 12px !important;
+    }
+    header #logo img {
+        width: 95%;
+        height: 50px;
+    }
+    header #logo p {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    #nav-bar {
+        display: flex;               /* Menggunakan Flexbox */
+        justify-content: flex-end;   /* Mengatur item agar ke kanan */
+        align-items: end;         /* Menyelaraskan item secara vertikal */
+        margin: -60px 10px 0px 620px;
+    }
+    #nav-bar ul {
+        display: flex;               /* Menyusun elemen dalam satu baris */
+        list-style: none;            /* Menghilangkan bullet pada list */
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+    }
+    header ul li a {
+        /* edit font  */
+        font: normal normal normal 18px/20px 'Montserrat', sans-serif;
+        text-align: center;
+        float: left;
+        color: #31511E;
+        height: 32px;
+    }
+    #slideshow #main-slider .flex-caption p {
+        font-size: 10px !important;
+        line-height: 18px;
+    
+    }
+    #about p {
+        /* edit font  */
+        font: normal normal normal 14px/22px 'Montserrat', sans-serif;
+        text-align: justify;
+    }
+    #services p {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 3px 0;
+    }
+    #blog h2 {
+        /* edit font  */
+        font: normal normal normal  18px/30px 'Montserrat', sans-serif;
+        margin: 3px 0 10px 0;
+    }
+    #blog p {
+        /* edit font  */
+        font: normal normal normal 14px/20px 'Montserrat', sans-serif;
+    }
+    #blog p a span {
+        font-size: 8px;
+    }
+    #slideshow #main-slider .slides img {
+        height: 400px;  /* Sesuaikan tinggi gambar untuk layar kecil */
+    }
+
+    #slideshow #main-slider .flex-caption {
+        display: none;
+    }
+
+    #slideshow #main-slider .flex-caption h3 {
+        font-size: 16px;
+    }
+
+    #slideshow #main-slider .flex-caption p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .hero-section {
+        padding: 150px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5em;
+        max-width: 90%;       /* Lebih lebar pada layar tablet */
+    }
+    
+    .hero-section p {
+        font-size: 1.3em;
+        max-width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    #logo img {
+        width: 100%;
+        height: auto;
+    }
+    header #logo p {
+        font-size: 14px;
+        margin-top: auto;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    header ul li a {
+        margin: 0;
+        padding: 22px 0 0 0;
+    }
+    header #logo img {
+        width: 45px;
+        height: 40px;
+        margin-top: -5px;
+        padding-top: 0px;
+    }
+    header #logo p {
+        font-size: 16px;
+        margin-top: 12px;
+        text-align: center;
+    }
+    header #mobile_menu {
+        font-size: 30px;
+        margin-top: -53px;
+        float: right;
+        color: #31511E;
+        margin-top: -42px;
+    }
+    header #mobile_menu_list ul {
+        list-style: none;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    header #mobile_menu_list li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 50px;
+        background: #31511e;
+        text-align: center;
+        border-bottom: 1px solid #ffffffbb;
+    }
+    header #mobile_menu_list li:hover {
+        background: #2fb218;
+        border-bottom: 1px solid #ffffff;
+    }
+    header #mobile_menu_list li a {
+        width: 100%;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        border-bottom: none;
+        text-decoration: none;
+    }
+    #slideshow #main-slider .flex-button a {
+        width: 90%;
+        bottom: auto;
+        margin-top: -120px;
+    }
+    #services p {
+        line-height: 20px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    #services h2 {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 20px 0 10px 0;
+        text-align: center;
+    }
+    #about img {
+        max-width: 100%;
+        margin: 20px auto 20px auto;
+    }
+    #services img {
+        max-width: 100%;
+        margin: 0 auto 0 auto;
+    }
+    #blog h2 {
+        /* edit font  */
+        font: normal normal normal  25px/30px 'Montserrat', sans-serif;
+        margin: 15px 0 15px 0;
+    }
+    #blog p a span {
+        font-size: 10px;
+    }
+    .thumbs li.item-thumbs .overlay {
+        opacity: 1;
+        bottom: 0;
+        width: 100%;
+        margin-top: 60%;
+        height: 40%;
+        transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+    }
+    .thumbs li.item-thumbs:hover .overlay {
+        opacity: 1;
+    }
+    .thumbs li.item-thumbs .overlay span {
+        font-size: 20px;
+    }
+    #slideshow #main-slider .slides img {
+        height: 250px;  /* Atur tinggi gambar untuk perangkat kecil */
+    }
+
+    #slideshow #main-slider .flex-caption {
+        display: none;
+    }
+
+    #slideshow #main-slider .flex-caption h3 {
+        font-size: 14px;
+    }
+
+    #slideshow #main-slider .flex-caption p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .hero-section {
+        padding: 1px 9px;
+        height: 230px;
+        margin: 110px 0px;
+
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5em;
+        max-width: 95%;
+    }
+    
+    .hero-section p {
+        font-size: 1.5em;
+        max-width: 95%;
+    }
+    #footer {
+        flex-direction: column; /* Susun footer secara vertikal */
+        text-align: center; /* Rata tengah untuk elemen di layar kecil */
+    }
+
+    .footer-content, .footer-icons {
+        flex: 1 1 auto; /* Biarkan elemen menyesuaikan lebar secara otomatis */
+        margin-bottom: 10px; /* Jarak antar elemen footer di layar kecil */
+    }   
+    
+}

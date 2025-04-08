@@ -1,0 +1,109 @@
+/* Warna hover untuk semua teks di navbar */
+    .navbar a.navbar-brand:hover,
+    .navbar .nav-link:hover,
+    .navbar .dropdown-item:hover {
+        color: yellow; /* Ganti warna sesuai keinginan */
+    }
+
+    /* Untuk tombol pencarian agar warna teks berubah saat hover */
+    .navbar .btn-outline-light:hover {
+        color: yellow; /* Ganti warna teks sesuai keinginan */
+        border-color: rgb(0, 0, 0); /* Jika ingin border juga berubah */
+    }
+
+/* Custom Navbar Styling */
+.navbar {
+    background-color: #2E7D32;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B2FF59;
+}
+
+.dropdown-menu {
+    background-color: #388E3C;
+}
+
+.dropdown-item {
+    color: #FFFFFF;
+}
+
+.dropdown-item:hover {
+    background-color: #B2FF59;
+}
+
+.btn-outline-success {
+    border-color: #2E7D32;
+    color: #B2FF59;
+}
+
+.btn-outline-success:hover {
+    color: #FFFFFF;
+}
+
+/* Responsive navbar */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column; /* Atur navbar agar menjadi vertikal pada tampilan ponsel */
+    }
+    .navbar-brand {
+        font-size: 1.5rem; /* Tetapkan ukuran font judul agar tetap konsisten */
+        text-align: center;
+    }
+    .d-none.d-lg-flex {
+        text-align: center;
+        margin-top: 10px;
+    }
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Menyembunyikan sidebar di luar layar */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        transition: left 0.3s ease; /* Animasi geser sidebar */
+        z-index: 1000; /* Pastikan sidebar berada di atas navbar dan konten */
+    }
+
+    #sidebar.active {
+        left: 0; /* Menampilkan sidebar */
+    }
+
+    /* Navbar dan konten utama tidak akan bergeser, tetap berada di tempat */
+    #main-container,
+    .navbar-bg {
+        transition: none; /* Menghilangkan animasi agar tetap tidak bergeser */
+    }
+
+    /* Navbar berada di atas sidebar */
+    .navbar-bg {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999; /* Navbar tetap berada di atas konten */
+    }
+}
+
+/* Menyembunyikan hamburger di layar besar */
+@media (min-width: 769px) {
+    .js-sidebar-toggle {
+        display: none; /* Menyembunyikan tombol hamburger pada layar besar */
+    }
+}
+
+/* Menjaga hamburger dan title tetap di kiri pada ponsel */
+@media (max-width: 992px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
